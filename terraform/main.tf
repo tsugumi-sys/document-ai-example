@@ -15,3 +15,9 @@ resource "google_project_iam_member" "default" {
   role    = each.value
   member  = "serviceAccount:${google_service_account.default.email}"
 }
+
+resource "google_storage_bucket" "default" {
+  name          = "ocr-example"
+  location      = "US"
+  force_destroy = true
+}

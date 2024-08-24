@@ -1,1 +1,4 @@
 google-cloud-documentai
+google-cloud-storage
+google-cloud-documentai-toolbox
+python-dotenv
