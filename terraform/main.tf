@@ -17,7 +17,7 @@ resource "google_project_iam_member" "default" {
 }
 
 resource "google_storage_bucket" "default" {
-  name          = "ocr-example"
+  name          = "ocr-example-d6f3f772"
   location      = "US"
   force_destroy = true
 }
