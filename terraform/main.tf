@@ -8,7 +8,7 @@ resource "google_service_account" "default" {
   account_id = "ocr-example"
 }
 
-resource "google_project_iam_member" "github_actions_iam_workload_identity_user" {
+resource "google_project_iam_member" "default" {
   for_each = toset(local.roles_for_ocr)
 
   project = data.google_project.project.id
